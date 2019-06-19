@@ -43,29 +43,28 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.oracle.ojdbc6</groupId>
-			<artifactId>ojdbc6</artifactId>
-			<version>11.2.0.3</version>
-			<scope>runtime</scope>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc14</artifactId>
+			<version>10.2.0.4.0</version>
 		</dependency>
 	</dependencies>
 
 	<build>
 		<plugins>	
-			<plugin>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot-maven-plugin</artifactId>
-					<configuration>
-						<maimClass>com.demo.Application</maimClass>
-					</configuration>
-					<executions>
-						<execution>
-							<goals>
-								<goal>repackage</goal>
-							</goals>
-						</execution>
-					</executions>
-				</plugin>		
+			<!--<plugin>-->
+					<!--<groupId>org.springframework.boot</groupId>-->
+					<!--<artifactId>spring-boot-maven-plugin</artifactId>-->
+					<!--<configuration>-->
+						<!--<maimClass>com.demo.Application</maimClass>-->
+					<!--</configuration>-->
+					<!--<executions>-->
+						<!--<execution>-->
+							<!--<goals>-->
+								<!--<goal>repackage</goal>-->
+							<!--</goals>-->
+						<!--</execution>-->
+					<!--</executions>-->
+				<!--</plugin>		-->
 			<!-- Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1 -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -76,16 +75,16 @@
 			</plugin>
 			
 			<!-- Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1: -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.1</version>
-				<configuration>
-					<verbose>true</verbose>
-					<fork>true</fork>
-					<executable>${JAVA8_HOME}/bin/javac</executable>
-				</configuration>
-			</plugin>  
+			<!--<plugin>-->
+				<!--<groupId>org.apache.maven.plugins</groupId>-->
+				<!--<artifactId>maven-compiler-plugin</artifactId>-->
+				<!--<version>3.1</version>-->
+				<!--<configuration>-->
+					<!--<verbose>true</verbose>-->
+					<!--<fork>true</fork>-->
+					<!--<executable>${JAVA8_HOME}/bin/javac</executable>-->
+				<!--</configuration>-->
+			<!--</plugin>  -->
 		</plugins>
 		<defaultGoal>compile</defaultGoal>
 	</build>

@@ -4,9 +4,11 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
 
 //映射Sql，定义接口
+@Repository
 public interface DataMapper {	
 
 	//查询。@Param对应参数属性注解，There is no getter for property named 'xx' in 'class java.lang.Integer
